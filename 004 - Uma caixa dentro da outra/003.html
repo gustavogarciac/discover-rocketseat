@@ -5,8 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div.paddingexample {
+            width: 500px;
+            height: 300px;
+            background: grey;
+            color: white;
+        }
+        div.paddingexample > p {
+            border: 2px solid green;
+            padding: 50px;
+            text-align: center;
+        }
+        div.outline-example {
+            height: 300px;
+            width: 300px;
+            background: blue;
+            border: 10px inset green;
+            outline: 10px dashed red;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="paddingexample">
+        <p>Example of padding</p>
+    </div>
+    <div class="outline-example">
+        <p>Example of outline</p>
+    </div>
 </body>
 </html>
