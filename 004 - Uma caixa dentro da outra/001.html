@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: black;
+            box-sizing: border-box;
+        }
+        .box {
+            border: 3px solid red;
+            width: fit-content;
+            padding: 20px;
+            border-radius: 8px;
+            background: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .box h1, p, ul, li{
+            border: 1px solid green;
+        }
+        ul {
+            list-style: square;
+        }
+        li {
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Understanding the Box Concept.</h1>
+        <p>Everything is a box in CSS/HTML.</p>
+        <p>There's also some elements inside the box like:</p>
+        <ul>
+            <li>Width</li>
+            <li>Height</li>
+            <li>Padding</li>
+            <li>Border</li>
+            <li>Margin</li>
+            <li>Outline</li>
+        </ul>
+    </div>
+</body>
+</html>

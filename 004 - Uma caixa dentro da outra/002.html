@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+        }
+        div#block-example {
+            height: 100px;
+            width: 500px;
+            border: 1px solid red;
+        }
+        span {
+            border: 1px solid green;
+            margin: 10px; /*It only works horizontally.*/
+        }
+        #margin, section {
+            border: 1px solid red;
+            width: 100px;
+            height: 100px;
+        }
+        #margin {
+            margin-bottom: 8px;
+        }
+        /*There's a margin collapse. It's not 16px of margin in total.*/
+        section {
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div id="block-example">block</div>
+    <span>inline</span>
+    <span>inline</span><span>inline</span><span>inline</span><span>inline</span><span>inline</span>
+
+    <div class="margin-example">
+        <p>What's a margin?</p>
+        <p>It's a space between elements.</p>
+        <ul>
+            <li>margin-top</li>
+            <li>margin-right</li>
+            <li>margin-bottom</li>
+            <li>margin-left</li>
+        </ul>
+        <p>shorthand:
+            margin: top right bottom left.
+        </p>
+    </div>
+    <div id="margin">Margin</div>
+    <section>Elemento abaixo</section>
+</body>
+</html>

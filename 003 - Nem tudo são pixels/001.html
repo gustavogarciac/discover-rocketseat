@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            background-color: black;
+            color: green;
+            overflow: scroll;
+        }
+        h1 {
+            font-size: 3em; /*REM = 16px EM = 10px BECAUSE IT IS DEFINED WITHIN THE PARENT.*/
+        }
+        h2 {
+            font-size: 2.5em;
+        }
+        p {
+            font-size: 32px;
+        }
+        .percentage {
+            width: 50%;
+            background-color: white;
+            color: black;
+        }
+        .box {
+            width: 50%;
+            height: calc(50% - 250px);
+            background: url('https://source.unsplash.com/random/') no-repeat center
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Absolute Dimensions</h1>
+    <p>It's fixed. It doesn't change like px, in, cm.</p>
+    <h1>Relative Dimensions</h1>
+    <p>It's relative to something. em, rem, </p>
+    <div class="percentage">
+        <h2>Percentages</h2>
+        <p>It'll be always relative to the parent.</p>
+    </div>
+    <div class="box"></div>
+    <br>
+    <h1>Functions</h1>
+    <p>
+        rgb()
+        <br>calc()
+    </p>
+
+</body>
+</html>
