@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Layouts</title>
+    <style>
+        div.box1, div.box2, div.box3 {
+            display: block;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+        main {
+            margin: 200px;
+            position: relative;
+        }
+
+        .box1 {
+            background-color: red;
+            position: absolute;
+            z-index: 3;
+            top: 15px;
+            left: 15px;
+        }
+
+        .box2 {
+            background-color: green;
+            position: absolute;
+            z-index: 2;
+            top: 25px;
+            left: 25px;
+        }
+        
+        .box3 {
+            background-color: blue;
+            position: absolute;
+            z-index: 1;
+            top: 35px;
+            left: 35px;
+        }
+    </style>
+</head>
+<body>
+    <div class="layouts">
+        <ul>
+            <li>Tables</li>
+            <li>Floats e Clear</li>
+            <li>Frameworks e Grid Systems</li>
+            <li>Flexbox</li>
+            <li>Grid</li>
+        </ul>
+    </div>
+    <div class="positions">
+        <p>You can change the position using tag position.</p>
+    </div>
+    <main>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </main>
+</body>
+</html>
