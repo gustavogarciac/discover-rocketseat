@@ -88,6 +88,12 @@ main {
     align-items: center;
 }
 
+.link-content a:hover {
+    text-decoration: underline;
+    color: var(--bg-techs);
+    transition: .2s;
+}
+
 /*TECHNOLOGIES*/
 #technologies {
     grid-area: technologies;
@@ -189,6 +195,12 @@ main {
     text-decoration: none;
     color: var(--text-color);
     font-size: 12px;
+}
+
+#my-projects a:hover {
+    color: var(--bg-techs);
+    text-decoration: underline;
+    transition: .3s;
 }
 
 /* PROJECT SECTION */
@@ -299,6 +311,10 @@ main {
 .post-content-body a {
     text-decoration: underline;
     color: var(--text-color);
+}
+.post-content-body a:hover {
+    color: var(--bg-techs);
+    transition: .3s;
 }
 .post-content-body-tags {
     display: flex;
