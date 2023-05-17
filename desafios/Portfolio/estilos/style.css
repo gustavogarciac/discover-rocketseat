@@ -1,0 +1,316 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+}
+
+body {
+    background-color: var(--body-bg-color);
+    color: var(--text-color);
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-areas: 
+        "profile-pic my-projects my-projects"
+        "profile-pic project1 project2"
+        "links recent-post recent-post"
+        "links post post"
+        "technologies a a"
+        "experiences a a"
+        "education a a";
+    grid-template-columns: 348px 1fr 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 40px;
+    padding: 40px;
+}
+
+/*MAIN SECTION======================================================*/
+
+/*PROFILE-PIC*/
+#profile-pic {
+    grid-area: profile-pic;
+    background-color: var(--bg-cards);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 8px;
+    width: 348px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.314);
+}
+#profile-pic img {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    border: 2px solid var(--bg-techs);
+}
+#profile-pic h1 {
+    font-size: 23px;
+    font-weight: bold;
+}
+#profile-pic p {
+    font-size: 13px;
+}
+
+/*LINKS*/
+#links {
+    grid-area: links;
+    background-color: var(--bg-cards);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.314);
+    color: var(--text-color);
+}
+.link-content > a{
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 13px;
+    align-items: center;
+}
+
+/*TECHNOLOGIES*/
+#technologies {
+    grid-area: technologies;
+    background-color: var(--bg-cards);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.314);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#technologies h1 {
+    font-size: 20px;
+}
+
+#technologies a {
+    text-decoration: none;
+    width: fit-content;
+    border: none;
+    background-color: var(--bg-techs);
+    border-radius: 30px;
+    padding: 6px 6px;
+    color: black;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+#tech-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/*EXPERIENCES*/
+#experiences {
+    grid-area: experiences;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.314);
+    background-color: var(--bg-cards);
+    color: var(--text-color)
+}
+#experiences h1 {
+    font-size: 20px;
+}
+#experiences ul {
+    list-style: circle;
+    padding-left: 30px;
+}
+#experiences li {
+    font-size: 14px;
+}
+
+/* EDUCATION */
+#education {
+    grid-area: education;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.314);
+    background-color: var(--bg-cards);
+    color: var(--text-color)
+}
+#education h1 {
+    font-size: 20px;
+}
+#education ul {
+    list-style: circle;
+    padding-left: 30px;
+}
+#education li {
+    font-size: 14px;
+}
+
+/* MY PROJECTS */
+#my-projects {
+    grid-area: my-projects;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.314);
+    background-color: var(--bg-cards);
+    color: var(--text-color)
+}
+#my-projects h1 {
+    font-size: 20px;
+}
+#my-projects a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 12px;
+}
+
+/* PROJECT SECTION */
+#project1, #project2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.314);
+    background-color: var(--bg-cards);
+    color: var(--text-color)
+}
+
+#project1 p, #project2 p {
+    font-size: 14px;
+}
+#project1 {
+    grid-area: project1;
+}
+#project2 {
+    grid-area: project2;
+}
+.project-name {
+    display: flex;
+    gap: 10px;
+}
+.project-name h1 {
+    font-size: 16px;
+}
+.project-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    flex-wrap: wrap;
+}
+.project-rating {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+/* RECENT POST */
+#recent-post {
+    grid-area: recent-post;
+
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.314);
+    background-color: var(--bg-cards);
+    color: var(--text-color)
+}
+#recent-post h1 {
+    font-size: 20px;
+}
+
+/* POST */
+.post {
+    grid-area: post;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.314);
+    background-color: var(--bg-cards);
+    color: var(--text-color);
+    flex-wrap: wrap;
+}
+
+.post img {
+    height: 128px;
+    width: 128px;
+    border-radius: 50%;
+}
+
+.post-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.post-content-head {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.post-content-head small {
+    font-size: 14px;
+    font-weight: light;
+}
+
+.post-content-head h1 {
+    font-size: 18px;
+}
+
+.post-content-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.post-content-body p {
+    font-size: 14px;
+}
+.post-content-body a {
+    text-decoration: underline;
+    color: var(--text-color);
+}
+.post-content-body-tags {
+    display: flex;
+    gap: 10px;
+}
+
+@media screen and (max-width: 940px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    #profile-pic {
+        width: 100%;
+    }
+}
