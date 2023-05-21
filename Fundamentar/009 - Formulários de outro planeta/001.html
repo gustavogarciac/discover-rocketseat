@@ -7,8 +7,30 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="cadastro.php" method="get">
-        
-    </form>
+<form action="cadastro.php">
+    <fieldset>
+        <legend>Contato</legend>
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome">
+    </fieldset>
+    <h1>Button</h1>
+    <p>It's used to submit a form.</p>
+    <button type="submit" autofocus>Enviar</button>
+</form>
+<form action="">
+    <fieldset>
+        <legend>Datalist</legend>
+        <p>Lista de valores como sugestão a uma tag input.</p>
+        <datalist id="fruitdata">
+            <option value="Banana"></option>
+            <option value="Morango"></option>
+            <option value="Maçã"></option>
+            <option value="Mamão"></option>
+            <option value="Laranja"></option>
+            <option value="Melão"></option>
+        </datalist>
+        <input type="text" name="frutas" id="frutas" list="fruitdata">
+    </fieldset>
+</form>
 </body>
 </html>

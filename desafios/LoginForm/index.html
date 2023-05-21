@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Login Form</title>
+</head>
+<body>
+    <main>
+        <aside id="image-side">
+            <img src="images/side-image.jpg" alt="Imagem de um carro perto de uma lagoa em um camping.">
+        </aside>
+        <section id="login-form">
+            <img src="images/logo.svg" alt="" id="logo">
+            <div id="form">
+                <form action="login.php" method="post">
+                    <div id="login-heading">
+                        <h1><img src="images/log-in.svg" alt=""> Faça seu login</h1>
+                        <small>Entre com suas informações de cadastro.</small>
+                    </div>
+                    <div class="form-content">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required minlength="7" autocomplete="on" autofocus>
+                    </div>
+                    <div class="form-content">
+                        <label for="password">Senha</label>
+                        <input type="password" name="password" id="password" placeholder="Digite sua senha" required minlength="5" maxlength="15" autocomplete="on">
+                    </div>
+                    <div id="remember-me">
+                        <div id="remember-me-checkbox">
+                            <input type="checkbox" name="rememberme" id="remeberme">
+                            <label for="rememberme">Lembre-me</label>
+                        </div>
+                        <a href="#">Esqueci minha senha</a>
+                    </div>
+                    <button id="submit">Entrar</button>
+                    <p>Não tem uma conta? <a href="#">Registre-se</a></p>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
