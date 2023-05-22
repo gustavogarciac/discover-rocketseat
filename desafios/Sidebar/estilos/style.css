@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --body-bg-color: #dce4e3;
+    --green: #18c29c;
+    --light-green: #8ed7c6;
+      --light-grey: #dce4e3;
+    --text-color: #084236;
+    --percentage-side: 20%;
+    --percentage-dashboard: 80%;
+}
+.html-sidebar-off {
+    --percentage-side: 5%;
+    --percentage-dashboard: 95%
+}
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "aside main";
+    grid-template-columns: var(--percentage-side) var(--percentage-dashboard);
+}
+
+aside {
+    background-color: var(--green);
+    color: var(--text-color);
+    grid-area: aside;
+
+    display: flex;
+    flex-direction: column;
+    transition: .5s;
+}
+aside header {
+    flex: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+aside.sideon header a{
+    line-height: 1px;
+}
+
+aside nav {
+    flex: 1;
+}
+aside nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    list-style: none;
+    padding: 10px;
+}
+aside nav ul li {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+}
+aside nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+aside nav ul li:hover {
+    background-color: var(--light-green);
+    border-radius: 8px;
+    cursor: pointer;
+}
+aside footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    
+    padding: 20px;
+    background-color: var(--light-green);
+}
+aside.sideon footer img {
+    border-radius: 8px;
+}
+aside.sideon footer h1 {
+    font-size: 15px;
+    font-weight: bold;
+}
+aside.sideon footer img {
+    padding: 5px;
+}
+aside footer img:hover {
+    background-color: var(--green);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* SIDEBAR OFF */
+aside.sideoff {
+    display: flex;
+    align-items: center;
+}
+aside.sideoff header > img{
+    display: none;
+}
+aside.sideoff  nav ul li a {
+    display: none;
+}
+aside.sideoff footer > img:nth-child(1) {
+    display: none;
+}
+aside.sideoff footer div.user-info {
+    display: none;
+}
+aside.sideoff footer {
+    justify-content: center;
+}
+
+
+
+
+
+main {
+    grid-area: main;
+
+    padding: 20px;
+    background-color: var(--light-grey);
+}
+main h1 {
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+
+@media (max-width: 920px) {
+    aside footer {
+        padding: 2px;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    aside footer {
+        display: none;
+    }
+}
