@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+:root {
+    --background: #000;
+    --text-color: #FFF;
+    --button: #8257E5;
+    --border: #29292E;
+    --border-menu-mobile: #A8A8B3;
+    --text-color-menu-mobile: #E1E1E6;
+}
+
+body {
+    background-color: var(--background);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    border-bottom: 1px solid rgba(211, 211, 211, 0.308);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+
+    width: 100%;
+    height: calc(100vh - 98px);
+    color: var(--text-color);
+}
+.titleMobile {
+    margin-top: 2rem;
+    text-align: center;
+    font-weight: 400;
+}
+.buttonMobile {
+    border: 1px solid var(--button);
+    border-radius: 5px;
+    padding: 5px 30px;
+    
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    color: var(--text-color);
+
+    font-size: 0.75em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.titleHero {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.titleHero h1:first-child {
+    font-size: 50px;
+}
+.titleHero h1:nth-child(2) {
+    font-size: 50px;
+    color: var(--background);
+    text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button); ;
+}
+.hero-image {
+    width: 100%;
+}
+.hero-image img {
+    width: 100%;
+}
