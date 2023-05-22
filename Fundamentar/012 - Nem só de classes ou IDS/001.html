@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 ~ p {
+            color: blue;
+        }
+        p + p {
+            margin-top: 500px;
+        }
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Esse é um parágrafo</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint voluptatum earum quisquam atque nihil cupiditate voluptatibus praesentium illo officiis est mollitia ex sit, porro quos, odio tempora illum, saepe aspernatur?</p>
+    <!-- Atribute Selector: []
+    [title] {
+        color: orange;
+    } -->
+
+    <!-- Combinators:
+    
+    Child Combinator: Elementos diretamente ligados a um parent. Example: div > ul 
+    
+    Adjacent Sibling Combinator: Identificado por +, Seleciona somente elemento do lado direito que é irmão
+    -->
+    <ul>
+        <li>Alo</li>
+        <li class="red"> Heyy</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            position: relative;
+        }
+        ul li::before {
+            content: "";
+            width: 1px;
+            height: 20px;
+            background-color: blue;
+            position: absolute;
+            bottom: 0px;
+        }
+        p::first-line {
+            font-size: 2em;
+        }
+        p::selection {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-elements</h1>
+    <ul>
+        <li>Gratidão</li>
+        <li>Paz</li>
+        <li>Conhecimento</li>
+        <li>Perdão</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, voluptatum, possimus voluptatem dicta saepe aliquam maiores, quasi nihil blanditiis quos dolorum aspernatur corporis voluptatibus assumenda temporibus eum quam impedit consequuntur?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, voluptatum, possimus voluptatem dicta saepe aliquam maiores, quasi nihil blanditiis quos dolorum aspernatur corporis voluptatibus assumenda temporibus eum quam impedit consequuntur?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, voluptatum, possimus voluptatem dicta saepe aliquam maiores, quasi nihil blanditiis quos dolorum aspernatur corporis voluptatibus assumenda temporibus eum quam impedit consequuntur?</p>
+</body>
+</html>

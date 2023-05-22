@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-areas: 
+            "header header"
+            "main aside"
+            "footer footer";
+            grid-template-columns: 60% 40%;
+            grid-template-rows: 20% 60% 20%;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+        header {
+            grid-area: header;
+            background-color: red;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 70px;
+        }
+        main {
+            grid-area: main;
+            background-color: blue;
+        }
+        aside {
+            grid-area: aside;
+            background-color: green;
+        }
+        footer {
+            grid-area: footer;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        logomarca
+        <nav>
+            <ul>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        Conteúdo Principal
+    </main>
+
+    <aside>
+        Conteúdo Lateral
+    </aside>
+    <footer>
+        Rodapé
+    </footer>
+</body>
+</html>

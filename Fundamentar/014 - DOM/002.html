@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --bg-color: #fff;
+            --text-color: black;
+        }
+        .light {
+            --bg-color: black;
+            --text-color: #fff;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: .3s;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Manipulating Content</h1>
+        <button onclick="changeTheme()">Change Theme</button>
+    </header>
+
+    <script>
+        function changeTheme() {
+            const section = document.getElementsByTagName('html')[0]
+            section.classList.toggle('light')
+        }
+    </script>
+</body>
+</html>

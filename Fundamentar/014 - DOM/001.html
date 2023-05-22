@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="get_by_id" onclick="changeTitle()">My Blog</h1> <!-- GetElementById -->
+    <h1 class="get_by_class" onclick="changeTitle()">My Blog</h1> <!-- GetElementsByClassName() -->
+    <h1 class="ola" onclick="changeTitle()">My blog</h1> <!-- GetElementsByTagName -->
+    <h1 class="ola" onclick="changeTitle()">My blog</h1> <!-- QuerySelector -->
+    <h1 class="ola" onclick="changeTitle()">My blog</h1> <!-- querySelectorAll -->
+
+
+
+    <script>
+        /* function changeTitle() {
+            const section = document.getElementById('get_by_id')
+            section.innerHTML = `Olá, mundo!`
+        } */
+        /* function changeTitle() {
+            const section = document.getElementsByClassName('get_by_class')[0]
+            section.innerHTML = `Olá, mundo!`
+        } */
+        /* function changeTitle() {
+            const section = document.getElementsByTagName('h1')[2]
+            section.innerHTML = "Getting by Tag Name"
+
+        } */
+        /* function changeTitle() {
+            const section = document.querySelector('body h1:nth-child(4)')
+            section.innerHTML = `Oiiiii`
+        } */
+        function changeTitle() {
+            const elements = document.querySelectorAll('.ola')
+            console.log(elements)
+            elements.forEach(el => console.log(el))
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        @keyframes entering1 {
+            from {
+                opacity: 0;
+                transform: translateX(600px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes entering2 {
+            from {
+                opacity: 0;
+                transform: translateX(-600px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        header {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            background-color: rgb(255, 217, 0);
+        }
+        header h1 {
+            animation: entering2 1.5s ease-in-out;
+        }
+        header ul {
+            list-style: none;
+            display: flex;
+            gap: .8rem;
+            font-weight: bold;
+            font-size: 1.2rem;
+            text-transform: capitalize;
+        }
+        header ul > li:hover {
+            cursor: pointer;
+            color: blueviolet;
+        }
+        nav {
+            display: flex;
+            gap: .8rem;
+            align-items: center;
+            animation: entering1 4s ease-in-out;
+        }
+        button#contact{
+            padding: 10px;
+            
+            background-color: blueviolet;
+            border: none;
+            border-radius: 5px;
+
+            color: white;
+            font-size: 1.2rem;
+            transition: transform .5s ease-in-out;
+        }
+        button#contact:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Logo</h1>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Testimonials</li>
+            </ul>
+            <button id="contact">Contact</button>
+        </nav>
+    </header>
+    <main></main>
+</body>
+</html>
